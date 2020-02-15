@@ -18,6 +18,7 @@ html {
 
 a {
     color: #262626;
+    display: inline-block;
     text-decoration: none;
     font-size: 1.3rem;
     cursor: pointer;
@@ -25,6 +26,11 @@ a {
 
 ul {
     list-style: none;
+}
+
+p {
+    font-size: 1.5rem;
+    line-height: 2rem;
 }
 
 /* Utility Classes */
@@ -35,10 +41,25 @@ ul {
     margin: auto;
 }
 
+.heading-lg {
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 28px;
+    color: #000000;
+}
+
+.c-heading {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 24px;
+    opacity: 0.95;
+}
+
 .btn {
     position: relative;
     display: inline-block;
     text-transform: uppercase;
+    text-align: center;
     text-decoration: none;
     font-weight: 600;
     font-size: 1.5rem;
@@ -55,6 +76,24 @@ ul {
 
 .btn-text {
     padding-right: 5px;
+}
+
+.blue-shop-now {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #0067b8;
+}
+
+.blue-shop-now span {
+    margin-right: 4px;
+    transition: all 200ms ease-in-out;
+    border-bottom: 2px solid transparent;
+}
+
+.blue-shop-now span:hover {
+    margin-right: 8px;
+    border-bottom: 2px solid #0067b8;
 }
 
 /* Nav */
@@ -81,6 +120,7 @@ ul {
 
 .main-menu li a {
     padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
 }
 
 .main-menu li a:hover {
@@ -104,6 +144,7 @@ ul {
 
 .all-microsoft {
     padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
 }
 
 .all-microsoft + i {
@@ -129,17 +170,15 @@ ul {
     text-align: center;
     align-items: center;
     justify-content: flex-end;
-    padding-bottom: 4.5%;
+    padding-bottom: 2.5%;
 }
 
 .showcase h2 {
-    font-size: 2.4rem;
-    font-weight: 600;
     margin-bottom: 1.5%;
 }
 
-.showcase p {
-    font-size: 1.5rem;
+.showcase p,
+.showcase a {
     margin-bottom: 2%;
 }
 
@@ -160,4 +199,128 @@ ul {
 .header-btn:hover::after {
     content: 'SHOP NOW';
     border-bottom: 2px solid #ffffff;
+}
+
+/* Home Cards 1 */
+.home-cards {
+    margin: 4% 0;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2%;
+    text-align: left;
+}
+
+.home-cards img {
+    width: 100%;
+    margin-bottom: 10%;
+}
+
+.home-cards h3 {
+    margin-bottom: 1.5%;
+}
+
+.home-cards a {
+    margin: 4% 0 0 0;
+}
+
+/* Do More with Windows */
+.next-pc {
+    background: #E7E7E7 url('./images/RE2iFfu.jpg') no-repeat right center/cover;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    padding: 6%;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.next-pc h2 {
+    margin-bottom: 1.5%;
+}
+
+.next-pc p,
+.next-pc a {
+    margin-bottom: 2%;
+}
+
+.next-pc-btn::after {
+    content: 'FIND YOUR NEXT PC';
+    font-weight: 600;
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(0, 0, 0, 0);
+    padding: 10px 0 2px 0;
+    position: absolute;
+    left: 22px;
+    top: 0;
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+    transition: all 200ms ease-in-out;
+}
+
+.next-pc-btn:hover::after {
+    content: 'FIND YOUR NEXT PC';
+    border-bottom: 2px solid #ffffff;
+}
+
+/* Home Cards 2- For Work */
+.for-work-title {
+    margin-bottom: 1.5%;
+}
+
+/* Every Seconds Count */
+.seconds-count {
+    background: #E7E7E7 url('./images/RE4pPhC.webp') no-repeat right center/cover;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    padding: 6%;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.seconds-count h2,
+.seconds-count p {
+    color: #ffffff;
+}
+
+.seconds-count h2 {
+    margin-bottom: 1.5%;
+}
+
+.seconds-count p,
+.seconds-count a {
+    margin-bottom: 2%;
+}
+
+.seconds-count-btn {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.seconds-count-btn:hover {
+    background-color: #e6e6e6;
+}
+
+.seconds-count-btn::after {
+    content: 'LEARN MORE';
+    font-weight: 600;
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(0, 0, 0, 0);
+    padding: 10px 0 2px 0;
+    position: absolute;
+    left: 22px;
+    top: 0;
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+    transition: all 200ms ease-in-out;
+}
+
+.seconds-count-btn:hover::after {
+    content: 'LEARN MORE';
+    border-bottom: 2px solid #000000;
 }
